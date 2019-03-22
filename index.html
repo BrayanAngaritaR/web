@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="description" content="nuhost responsive HTML & WHMCS hosting template">
+		<meta name="author" content="coodiv.net (nedjai mohamed)">
+		<!-- <link rel="icon" href="https://coodiv.net/project/nuhost/HTML/img/header/favicon.ico"> -->
+		<title>Crisálida</title>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/icons/flaticon.css" rel="stylesheet">
+		<link href="assets/icons-t/flaticon.css" rel="stylesheet">
+		<link href="assets/css/main.css" rel="stylesheet">
+		<link href="assets/css/bootstrap.offcanvas.min.css" rel="stylesheet">
+		<link href="assets/css/fontawesome-all.min.css" rel="stylesheet">
+		<link href="assets/css/animate.css" rel="stylesheet">
+		<link href="assets/css/responsive.css" rel="stylesheet">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+		<link rel="stylesheet" href="assets/css/flickity.min.css">
+		<link rel="stylesheet" href="assets/css/modal-video.min.css">
+		<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="assets/css/flaticon.css">
+	</head>
+
+<body>
+	<div class="nuhost-template-demo">
+		<div class="body-demo-t">
+			<div class="nuhost-template-skin-body">
+				<div class="demo-t-logo">
+					<a href=""><img id="preset_color_sw_logo" alt="Image" src="assets/img/logo.svg" /></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="videomodal" tabindex="-1" role="dialog" aria-labelledby="videomodal" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" id="video"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="preloader">
+		<svg class="spinner" id="pageloader_anime" width="32px" height="32px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+			<circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+		</svg>
+	</div>
+
+	<div id="header" class="christmas-edition">
+		<div class="search-header-block">
+			<form id="pitursrach-header" name="formsearch" method="get" action="#">
+				<input name="s" id="search" type="text" class="text" value="" placeholder="Ingresa lo que deseas buscar y presiona ENTER">
+				<button type="submit" class="submit"><span class="fa fa-search"></span></button>
+				<a class="closesrch-her-block np-dsp-block">
+					<span class="first-stright"></span>
+					<span class="second-stright"></span>
+				</a>
+			</form>
+		</div>
+
+		<div class="header-animation">
+			<div id="particles-bg"></div>
+			<div class="video-bg-nuhost-header">
+				<div id="video_cover"></div>
+				<video autoplay muted loop><source src="media/coodiv-vid.mp4" type="video/mp4"></video>
+				<span class="video-bg-nuhost-header-bg"></span>
+			</div>
+			<span class="moon-bg-her"></span>
+			<a class="support-header-ring" href="#"><img src="assets/img/support.svg" alt="" /> <span>Contáctanos</span></a>
+		</div>
+
+		<div class="header-top-menu">
+			<div class="container">
+				<ul>
+				</ul>
+				<div class="ml-auto fl-right phone-no-display">
+					<ul>
+						<li><a href="#"><i class="fas fa-gavel"></i> Términos y condiciones</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="top-header-nav-home">
+			<div class="container">
+				<nav class="navbar navbar-expand-md navbar-light header-nav-algo-coodiv header-nav-algo-coodiv-v2">
+					<a class="navbar-brand" href="index.html">
+						<img class="black-bg-logo" src="assets/img/logo.svg" alt="" />
+						<!-- <img class="white-bg-logo" src="https://coodiv.net/project/nuhost/HTML/img/header/logo-b.png" alt="" /> -->
+						<span>Unidos por un mundo mejor</span>
+					</a>
+					<button class="navbar-toggle offcanvas-toggle menu-btn-span-bar ml-auto" data-toggle="offcanvas" data-target="#offcanvas-menu-home">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+					<div class="collapse navbar-collapse navbar-offcanvas" id="offcanvas-menu-home">
+
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown" href="#" id="indaxdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inicio <!-- <span class="caret"></span> --></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sobre nosotros</a>
+							</li>
+
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown" href="#" id="helpdropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ayuda <span class="caret"></span></a>
+								<div class="dropdown-menu" aria-labelledby="helpdropdown">
+									<a class="dropdown-item" href="#">Centro de ayuda</a>
+									<a class="dropdown-item" href="#">Preguntas frecuentes</a>
+									<a class="dropdown-item" href="#">Blog</a>
+								</div>
+							</li>
+
+							<li class="nav-item">
+								<a class="nav-link" href="contact.html">Donaciones</a>
+							</li>
+
+							<li class="nav-item">
+								<a data-toggle="tooltip" data-placement="bottom" title="search" class="search-headr" href="#"><img src="https://coodiv.net/project/nuhost/HTML/img/svgs/search.svg" alt="" /></a>
+							</li>
+						</ul>
+					</div>
+
+					<ul class="account-place-header-nav">
+						<li class="nav-item dropdown">
+							<a data-toggle="dropdown" aria-haspopup="true" id="customarea" aria-expanded="false" class="accouting-h dropdown-toggle" href="#"><img src="assets/img/avatar.svg" alt="" /></a>
+							<div class="dropdown-menu login-drop-down-header" aria-labelledby="customarea">
+								<form action="#" data-form="validate">
+									<div class="form-group">
+										<input type="email" name="username" placeholder="Correo electrónico" class="form-control" required>
+									</div>
+									<div class="form-group">
+										<input type="password" name="password" placeholder="Contraseña" class="form-control" required>
+									</div>
+									<p class="help-block"><a href="#">¿Olvidaste la contraseña?</a> <a href="#">Registrarse</a></p>
+									<button type="submit" class="btn btn-block btn-default text-uppercase">Ingresar</button>
+								</form>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="header-heeadline">
+			<div class="outliner-middl-ha">
+				<p>Trabajamos por un mundo mejor</p>
+				<div class="row justify-content-center">
+					<div class="col-md-8">
+						<form action="domain-results.html" id="domain-search" class="wow fadeIn" data-wow-delay="0.5s">
+							<span class="space-men"></span>
+							<input id="domain-text" type="text" name="domain" placeholder="¿Qué quieres explorar?" />
+							<span class="inline-button">
+								<button id="search-btn" type="submit" name="submit" value="Search"> <img src="assets/icons/search.svg" alt="search icon" /> </button>
+							</span>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> 
+
+	<section class="first-items-home">
+		<div class="container">
+			<div class="row justify-content-left">
+				<div class="col-md-4 item-icons">
+					<span class="free-badje">App</span>
+					<span class="nomber-overlow"><b>01</b></span>
+					<i class="icon fas fa-mobile color-1"></i>
+
+					<h5>Ambiental</h5>
+					<p>Nuestras aplicaciones te presentarán varias alternativas para contribuyas al mejoramiento de tu entorno.</p>
+
+					<div class="badje-link-footer"><a href="#">Descargar <i class="far fa-arrow-alt-circle-right"></i> </a></div>
+				</div>
+
+				<div class="col-md-4 item-icons">
+					<span class="nomber-overlow"><b>02</b></span>
+					<i class="icon fas fa-chart-area color-3"></i>
+					<h5>Investigación</h5>
+					<p>¿Quieres contribuir a una mejora del mundo? Estamos investigando varias 
+					alternativas para que lo hagas.</p>
+
+					<div class="badje-link-footer"><a href="#">Explorar <i class="far fa-arrow-alt-circle-right"></i> </a></div>
+				</div>
+
+				<div class="col-md-4 item-icons">
+					<span class="nomber-overlow"><b>03</b></span>
+					<i class="icon fas fa-bullhorn color-2"></i>
+					<h5>Difusiones</h5>
+					<p>Con tu ayuda podemos llegar a millones de personas. Puedes publicar tus denuncias, agregar aportes y más.</p>
+					<div class="badje-link-footer"><a href="#">Me interesa <i class="far fa-arrow-alt-circle-right"></i> </a></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="second-items-home">
+		<div class="container">
+			<div class="tittle-simple-one">
+				<h5>Nuestros aliados</h5>
+			</div>
+		</div>
+	</section>
+
+	<section class="our-pertners">
+		<div class="container">
+			<div class="owl-carousel pertners-carousel owl-theme">
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo1.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo2.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo3.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo4.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo5.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo1.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo2.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo3.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo4.png" alt="" /> </a>
+				</div>
+				<div class="item">
+					<a href="#"> <img src="assets/img/partners/logo5.png" alt="" /> </a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="perlex-efect-section parallax-window" data-parallax="scroll" data-image-src="assets/img/event.jpg">
+		<span class="perlex-hidden-iverlow"></span>
+		<div class="container">
+			<div class="row justify-content-left">
+				<div class="col-md-5">
+					<div class="video-section-text-place">
+						<span class="over-ole-grandient-orl"></span>
+						<h5>Evento presencial</h5>
+						<span class="post-category">Medellín, CO</span> <span class="post-date">19 abril 2019</span>
+						<p>Descubre miles de ideas para reciclar en casa, ganar dinero en el proceso y aprender a salvar el mundo. </p>
+						<a href="#">Quiero asistir</a>
+					</div>
+				</div>
+				<div class="col-md-7 video-section-play-place">
+					<a class="video-btn" data-toggle="modal" data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#videomodal" href="#"><i class="fas fa-play"></i> <span class="first-text"><b>Reproducir</b> video</span> <span class="second-text"><b>Haz clic</b> aquí</span></a>br
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="our-sevices-section">
+		<div class="container">
+			<div class="tittle-simple-one">
+				<h5>¿Qué quieres descubrir hoy?<span>Selecciona el tema de tu interés</span></h5>
+			</div>
+		</div>
+
+		<ul id="oursevices" class="carousel carousel-nav-services">
+			<li class="carousel-cell">
+				<a class="nav-link">
+					<i class="fas fa-recycle"></i>
+					<span class="title-tabs-of">Reciclaje</span>
+				</a>
+			</li>
+
+			<li class="carousel-cell">
+				<a class="nav-link">
+					<i class="fas fa-memory"></i>
+					<span class="title-tabs-of">Smart Cities</span>
+				</a>
+			</li>
+
+			<li class="carousel-cell">
+				<a class="nav-link">
+					<i class="fas fa-exclamation-triangle"></i>
+					<span class="title-tabs-of">Ecotonos</span>
+				</a>
+			</li>
+
+			<li class="carousel-cell">
+				<a class="nav-link">
+					<i class="fas fa-search-location"></i>
+					<span class="title-tabs-of">Patrimonio</span>
+				</a>
+			</li>
+
+			<li class="carousel-cell">
+				<a class="nav-link">
+					<i class="fas fa-fingerprint"></i>
+					<span class="title-tabs-of">Huella ecológica</span>
+				</a>
+			</li>
+		</ul>
+
+		<div class="carousel carousel-main-services">
+			<div class="carousel-cell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 text-tab-content-algo text-center">
+							<div class="text-absoo">
+								<h5>Reciclaje</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<a href="#">Continuar leyendo</a>
+								<div class="pb-5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-cell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 text-tab-content-algo text-center">
+							<div class="text-absoo">
+								<h5>Smart Cities</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<a href="#">Continuar leyendo</a>
+								<div class="pb-5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-cell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 text-tab-content-algo text-center">
+							<div class="text-absoo">
+								<h5>Ecotonos</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<a href="#">Continuar leyendo</a>
+								<div class="pb-5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-cell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 text-tab-content-algo text-center">
+							<div class="text-absoo">
+								<h5>Patrimonio cultural</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<a href="#">Continuar leyendo</a>
+								<div class="pb-5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-cell">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-8 text-tab-content-algo text-center">
+							<div class="text-absoo">
+								<h5>Huella ecológica</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in eprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								<a href="#">Continuar leyendo</a>
+								<div class="pb-5"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="blog-home-section">
+		<div class="container">
+			<div class="tittle-simple-one"><h5>Últimas publicaciones</h5></div>
+			<div class="row justify-content-center blog-items-home">
+				<div class="col-md-4">
+					<div class="home-blog-te">
+						<div class="post-thumbn parallax-window" style="background: url(https://coodiv.net/project/nuhost/HTML/img/blog/blog4.png) no-repeat center;"></div>
+
+						<div class="post-bodyn">
+							<h5><a href="#">Consectetur adipisicing elit...</a></h5>
+							<p><i class="far fa-calendar"></i>Hace 1 semana</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="home-blog-te">
+						<div class="post-thumbn parallax-window" style="background: url(https://coodiv.net/project/nuhost/HTML/img/blog/blog3.png) no-repeat center;"></div>
+						
+						<div class="post-bodyn">
+							<h5><a href="#">Excepteur sint occaecat...</a></h5>
+							<p><i class="far fa-calendar"></i>Hace 1 semana</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="home-blog-te">
+						<div class="post-thumbn parallax-window" style="background: url(https://coodiv.net/project/nuhost/HTML/img/blog/blog2.png) no-repeat center;"></div>
+
+						<div class="post-bodyn">
+							<h5><a href="#">Reprehenderit in voluptate...</a></h5>
+							<p><i class="far fa-calendar"></i>Hace 1 semana</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="form-contact-home-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<form class="col-md-8 row justify-content-center form-contain-home" id="
+				ajax-contact" method="post" action="mailer.php">
+
+				<h5>¿Tienes algo para comentarnos?<span>O solamente saludarnos</span></h5>
+				<div id="form-messages"></div>
+				
+				<div class="col-md-6">
+					<div class="field input-field">
+						<input class="form-contain-home-input" type="text" id="name" name="name" 
+						required>
+						<span class="input-group-prepend">Nombre completo</span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="field input-field">
+						<input class="form-contain-home-input" type="email" id="email" name="email
+						" required>
+						<span class="input-group-prepend">Correo electrónico</span>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="field input-field">
+						<textarea class="form-contain-home-input" id="message" name="message" 
+						required></textarea>
+						<span class="input-group-prepend">Todo lo que quieres decirnos</span>
+					</div>
+				</div>
+
+				<div class="btn-holder-contect">
+					<button type="submit">Enviar</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section class="footer-coodiv-thm pding-200">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-sm-12 col-md-4">
+					<a class="footer-brand" href="#">
+						<img src="assets/img/logo.svg" alt="">
+					</a>
+
+					<a class="footer-contact-a-hm"><i class="fas fa-life-ring"></i> 01-8000-000000</a> 
+
+					<a class="footer-contact-a-hm"><i class="fas fa-at"></i> <span>hola@ecologia.com</span></a> 
+
+					<a class="footer-contact-a-hm"><i class="fas fa-map-marker-alt"></i> Carrera 55 N° 49-51 Medellín, Colombia</a> 
+
+				</div>
+
+				<div class="col-sm-12 col-md-4 quiq-links-footer-mb-st">
+					<h5 class="footer-title-simple">Enlaces</h5>
+					<ul class="main-menu-footer-mn">
+						<li>
+							<a href="index.html" class="footer-contact-a-hm">
+								<i class="fas fa-home"></i> Inicio
+							</a>
+						</li>
+
+						<li>
+							<a href="domain-search.html" class="footer-contact-a-hm">
+								<i class="fas fa-comment-dollar"></i> Donaciones
+							</a>
+						</li>
+
+						<li>
+							<a href="about-us.html" class="footer-contact-a-hm">
+								<i class="fas fa-medal"></i> Sobre nosotros
+							</a>
+						</li>
+
+						<li>
+							<a href="domain-search.html" class="footer-contact-a-hm">
+								<i class="far fa-question-circle"></i> Preguntas frecuentes
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="col-sm-12 col-md-4 stay-in-tch-footer-mb-st">
+					<h5 class="footer-title-simple">Notificaciones</h5>
+					<form class="form-contain-home-subscribe">
+						<input type="email" id="email-subscribe" name="email-subscribe" 
+						placeholder="Ingresa tu correo" required>
+						<button type="submit"><i class="fas fa-paper-plane"></i></button>
+					</form>
+
+					<div class="footer-social-links">
+						<a class="facebookcc" href="#"><i class="fab fa-facebook-f"></i></a>
+						<a class="twittercc" href="#"><i class="fab fa-twitter"></i></a>
+						<a class="dribbblecc" href="#"><i class="fab fa-dribbble"></i></a>
+					</div>
+
+					<p class="copyright-footer-p">© 2019 <i class="fas fa-heart"></i> UNAULA</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/waypoints.min.js"></script>
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<script src="assets/js/particles-code.js"></script>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script> -->
+	<script src="assets/js/typed.js"></script>
+	<script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="assets/js/parallax.min.js"></script>
+	<script src="assets/js/bootstrap.offcanvas.min.js"></script>
+	<script src="assets/js/flickity.pkgd.min.js"></script>
+	<script src="assets/js/scripts.js"></script>
+	<script src="assets/js/mailer.js"></script>
+	<script src="assets/js/jquery.touchSwipe.min.js"></script>
+	<script src="assets/js/demo.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script src="assets/js/modal-video.min.js"></script>
+	<script src="assets/js/particles.js"></script>
+	<script src="assets/js/mixitup.min.js"></script>
+	<script src="assets/js/video-bg.js"></script>
+</body>
+</html>
